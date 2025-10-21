@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creack - Sua experiência gastronômica única">
+    <title>Creack - Experiência Gastronômica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav-container" role="navigation">
+            <div class="logo" aria-label="Creack Logo">Creack</div>
+            <button class="mobile-menu" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" aria-current="page">Início</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Descubra Sabores Únicos no Creack</h1>
+                <p>Uma experiência gastronômica que vai além das suas expectativas</p>
+                <a href="#menu" class="cta-button" role="button">Ver Cardápio</a>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section" aria-labelledby="menu-title">
+            <h2 id="menu-title">Nosso Cardápio</h2>
+            <div class="menu-grid">
+                <article class="menu-item">
+                    <img src="https://via.placeholder.com/300" alt="Prato Especial Creack" loading="lazy">
+                    <h3>Prato Especial Creack</h3>
+                    <p>Uma combinação única de sabores que vai surpreender seu paladar</p>
+                    <span class="price">R$ 45,90</span>
+                </article>
+                <!-- More menu items... -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section" aria-labelledby="about-title">
+            <h2 id="about-title">Sobre o Creack</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O Creack nasceu da paixão pela gastronomia e do desejo de criar experiências únicas para nossos clientes.</p>
+                    <p>Nossa missão é proporcionar momentos inesquecíveis através de pratos excepcionais e um atendimento impecável.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400" alt="Interior do restaurante Creack" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Creack</h3>
+                <p>Rua das Delícias, 123</p>
+                <p>São Paulo - SP</p>
+                <p>Tel: (11) 1234-5678</p>
+            </div>
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="#" aria-label="Siga-nos no Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Curta nossa página no Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Siga-nos no Twitter">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Creack. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
